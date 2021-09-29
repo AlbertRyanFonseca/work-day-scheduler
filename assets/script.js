@@ -3,6 +3,6 @@ console.log(today);
 
 var displayToday = function () {
     $("#currentDay").text(today);
-};
+}
 
 displayToday();
