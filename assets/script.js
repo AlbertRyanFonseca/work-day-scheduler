@@ -16,8 +16,10 @@ $(document).ready(function () {
     row.append(timeColumn);
 
     const textArea = $("<textarea>");
+    textArea.addClass("col-10 description");
     row.append(textArea);
 
-    const button = $("<button>")
+    const button = $("<button>");
+    button.addClass("col-1 saveBtn");
     row.append(button);
 })
