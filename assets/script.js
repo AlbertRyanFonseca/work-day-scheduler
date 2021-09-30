@@ -20,6 +20,11 @@ $(document).ready(function () {
     userTextArea.attr("id", timeDisplayed[0]);
     row.append(userTextArea);
 
+    var timeArrayVal = localStorage.getItem(times[i]);
+    if (timeArrayVal != null) {
+        userTextArea.val(timeArrayVal);
+    }
+
     const saveButton = $("<button>");
     saveButton.addClass("col-1 saveBtn");
     const saveIcon = $("<i class='far fa-save fa-lg'></i>");
