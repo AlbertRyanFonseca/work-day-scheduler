@@ -10,8 +10,14 @@ $(document).ready(function () {
     row.attr("data-time", timeDisplayed[0]);
     $(".container").append(row);
 
-    const column = $("<div>");
-    column.addClass("col-1 hour");
-    column.text(timeDisplayed[0]);
-    row.append(column);
+    const timeColumn = $("<div>");
+    timeColumn.addClass("col-1 hour");
+    timeColumn.text(timeDisplayed[0]);
+    row.append(timeColumn);
+
+    const textArea = $("<textarea>");
+    row.append(textArea);
+
+    const button = $("<button>")
+    row.append(button);
 })
