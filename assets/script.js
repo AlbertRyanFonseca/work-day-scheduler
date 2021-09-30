@@ -24,4 +24,13 @@ $(document).ready(function () {
     const saveIcon = $("<i class='far fa-save fa-lg'></i>");
     saveButton.append(saveIcon);
     row.append(saveButton);
-})
+
+    $(".saveBtn").on("click", function (event) {
+        event.preventDefault();
+        var timeStored = $(this).parent().attr("data-time");
+        var textStored = $(this).siblings(".description").val();
+        localStorage.setItem(timeStored, textStored);
+    })
+
+});
+
