@@ -22,3 +22,4 @@ Created by Albert Fonseca. Starter code contains HTML and CSS with Bootstrap & j
 
 https://albertryanfonseca.github.io/work-day-scheduler/
 
+![Work Day Sceduler](https://user-images.githubusercontent.com/82438047/135380102-ee2580a2-4807-47bd-86f5-6cf8ad7e357a.gif)
