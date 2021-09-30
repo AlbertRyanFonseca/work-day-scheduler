@@ -30,7 +30,13 @@ $(document).ready(function () {
         var timeStored = $(this).parent().attr("data-time");
         var textStored = $(this).siblings(".description").val();
         localStorage.setItem(timeStored, textStored);
-    })
+    });
+
+    function classColorUpdate() {
+        var currentHour = parseInt(moment().format('HH'));
+        console.log(currentHour);
+    }
+    classColorUpdate();
 
 });
 
