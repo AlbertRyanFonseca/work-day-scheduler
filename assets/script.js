@@ -34,7 +34,11 @@ $(document).ready(function () {
 
     function classColorUpdate() {
         var currentHour = parseInt(moment().format('HH'));
-        console.log(currentHour);
+
+        $("textarea").each(function () {
+            var hours = parseInt($(this).attr("id"));
+            console.log(hours);
+        })
     }
     classColorUpdate();
 
