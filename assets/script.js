@@ -15,11 +15,13 @@ $(document).ready(function () {
     timeColumn.text(timeDisplayed[0]);
     row.append(timeColumn);
 
-    const textArea = $("<textarea>");
-    textArea.addClass("col-10 description");
-    row.append(textArea);
+    const userTextArea = $("<textarea>");
+    userTextArea.addClass("col-10 description");
+    row.append(userTextArea);
 
-    const button = $("<button>");
-    button.addClass("col-1 saveBtn");
-    row.append(button);
+    const saveButton = $("<button>");
+    saveButton.addClass("col-1 saveBtn");
+    const saveIcon = $("<i class='far fa-save fa-lg'></i>");
+    saveButton.append(saveIcon);
+    row.append(saveButton);
 })
