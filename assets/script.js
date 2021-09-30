@@ -17,6 +17,7 @@ $(document).ready(function () {
 
     const userTextArea = $("<textarea>");
     userTextArea.addClass("col-10 description");
+    userTextArea.attr("id", timeDisplayed[0]);
     row.append(userTextArea);
 
     const saveButton = $("<button>");
@@ -36,8 +37,8 @@ $(document).ready(function () {
         var currentHour = parseInt(moment().format('HH'));
 
         $("textarea").each(function () {
-            var hours = parseInt($(this).attr("id"));
-            console.log(hours);
+            var hour = parseInt($(this).attr("id"));
+            console.log(hour);
         })
     }
     classColorUpdate();
