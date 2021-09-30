@@ -38,7 +38,14 @@ $(document).ready(function () {
 
         $("textarea").each(function () {
             var hour = parseInt($(this).attr("id"));
-            console.log(hour);
+
+            if (hour < currentHour) {
+                $(this).addClass("past")
+            } else if (hour === currentHour) {
+                $(this).addClass("present")
+            } else {
+                $(this).addClass("future")
+            }
         })
     }
     classColorUpdate();
